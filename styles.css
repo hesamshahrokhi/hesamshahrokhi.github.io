@@ -45,10 +45,6 @@ header .bio {
 a {
     color: #03566f;
     text-decoration: none;
-    /* open links in new tab */
-    a[target="_blank"] {
-        color: #03566f;
-    }
 }
 
 h1 {
