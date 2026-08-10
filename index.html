@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="theme-color" content="#03566f">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Personal website of Hesam Shahrokhi — software researcher and engineer, Ph.D. in Informatics. Projects, publications, and career path.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://hesamshahrokhi.github.io/">
+    <meta property="og:site_name" content="Hesam Shahrokhi">
+    <meta property="og:title" content="Hesam Shahrokhi — Compilers, Data Processing, Performance">
+    <meta property="og:description" content="Personal website of Hesam Shahrokhi — software researcher and engineer, Ph.D. in Informatics. Projects, publications, and career path.">
+    <meta property="og:image" content="https://hesamshahrokhi.github.io/images/hesam_shahrokhi.jpg">
+    <meta property="og:image:alt" content="Portrait of Hesam Shahrokhi">
+
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Hesam Shahrokhi — Compilers, Data Processing, Performance">
+    <meta name="twitter:description" content="Personal website of Hesam Shahrokhi — software researcher and engineer, Ph.D. in Informatics. Projects, publications, and career path.">
+    <meta name="twitter:image" content="https://hesamshahrokhi.github.io/images/hesam_shahrokhi.jpg">
+
+    <link rel="canonical" href="https://hesamshahrokhi.github.io/">
+
+    <title>Hesam Shahrokhi — Compilers, Data Processing, Performance</title>
+
+    <link rel="icon" href="images/favicon/favicon.ico" type="image/x-icon">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="images/favicon/android-chrome-192x192.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="images/favicon/android-chrome-512x512.png">
+    <link rel="apple-touch-icon" href="images/favicon/apple-touch-icon.png">
+    <link rel="manifest" href="images/favicon/site.webmanifest">
+    <link rel="preload" as="image" href="images/hesam_shahrokhi.jpg" fetchpriority="high">
+    <link rel="preload" as="font" type="font/woff2" href="fonts/inter-latin-var.woff2" crossorigin>
+    <link rel="preload" as="font" type="font/woff2" href="fonts/jetbrains-mono-latin-var.woff2" crossorigin>
+    <link rel="stylesheet" href="styles.css">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Hesam Shahrokhi",
+      "url": "https://hesamshahrokhi.github.io/",
+      "image": "https://hesamshahrokhi.github.io/images/hesam_shahrokhi.jpg",
+      "jobTitle": "Principal Software Engineer",
+      "worksFor": { "@type": "Organization", "name": "RelationalAI" },
+      "alumniOf": [
+        { "@type": "CollegeOrUniversity", "name": "University of Edinburgh" },
+        { "@type": "CollegeOrUniversity", "name": "Sharif University of Technology" }
+      ],
+      "sameAs": [
+        "https://www.linkedin.com/in/shshahrokhi/",
+        "https://scholar.google.com/citations?user=yaKjZKmBYpoC&hl=en",
+        "https://github.com/hesamshahrokhi",
+        "https://dblp.org/pid/322/1001.html"
+      ],
+      "knowsAbout": ["Compilers", "Query Engines", "Software Performance", "Programming Languages", "Databases"]
+    }
+    </script>
+</head>
+<body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <nav class="topnav" aria-label="Primary">
+        <div class="topnav-inner">
+            <ul class="topnav-links">
+                <li><a href="#top">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#path">Path</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header id="top" class="hero">
+        <div class="hero-pattern" aria-hidden="true"></div>
+        <div class="hero-inner">
+            <img src="images/hesam_shahrokhi.jpg" alt="Portrait of Hesam Shahrokhi" class="avatar" width="140" height="140" fetchpriority="high">
+            <h1>Hesam Shahrokhi</h1>
+            <p class="hero-role">Ph.D., Informatics · Principal Software Engineer at RelationalAI</p>
+            <nav class="contact-info" aria-label="Contact and profiles">
+                <a class="link-btn is-email" href="mailto:hesamoddin.shahrokhi@gmail.com">
+                    <svg class="btn-ico" viewBox="0 0 24 24" aria-hidden="true" focusable="false" width="17" height="17"><path fill="currentColor" d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2zm0 4.236l-8 4.882-8-4.882V6h16v2.236z"/></svg>
+                    <span>Email</span>
+                </a>
+                <a class="link-btn is-github" target="_blank" rel="noopener noreferrer" href="https://github.com/hesamshahrokhi">
+                    <svg class="btn-ico" viewBox="0 0 24 24" aria-hidden="true" focusable="false" width="17" height="17"><path fill="currentColor" d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61-.546-1.385-1.335-1.755-1.335-1.755-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+                    <span>GitHub</span>
+                </a>
+                <a class="link-btn is-scholar" target="_blank" rel="noopener noreferrer" href="https://scholar.google.com/citations?user=yaKjZKmBYpoC&hl=en">
+                    <svg class="btn-ico" viewBox="0 0 24 24" aria-hidden="true" focusable="false" width="17" height="17"><path fill="currentColor" d="M5.242 13.769L0 9.5 12 0l12 9.5-5.242 4.269C17.548 11.249 14.978 9.5 12 9.5c-2.977 0-5.548 1.749-6.758 4.269zM12 10a7 7 0 1 0 0 14 7 7 0 0 0 0-14z"/></svg>
+                    <span>Google Scholar</span>
+                </a>
+                <a class="link-btn is-linkedin" target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/shshahrokhi/">
+                    <svg class="btn-ico" viewBox="0 0 24 24" aria-hidden="true" focusable="false" width="17" height="17"><path fill="currentColor" d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.063 2.063 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+                    <span>LinkedIn</span>
+                </a>
+            </nav>
+            <hr class="hero-rule">
+            <p class="tagline">Writing working code is the easy half. Now even AI can do it.</p>
+            <p class="hero-sub">The other half is performance, reliability, safety, security, and more. Performance has been my focus in recent years — from a Ph.D. on compilation to production systems, with one method throughout: compile the workload rather than interpret it. The same approach runs through relational queries, Python dataframes, linear algebra, market data, and PDE solvers. That work continues. Alongside it, a new question: what tooling does an AI agent need to clear the other half?</p>
+        </div>
+    </header>
+
+    <main id="main">
+        <section id="projects" class="section">
+            <h2 class="section-title"><span class="section-marker">/</span> Projects</h2>
+            <ul class="project-grid">
+                <li class="project-card">
+                    <h3 class="project-name"><a target="_blank" rel="noopener noreferrer" href="https://github.com/edin-dal/pytond">PyTond</a></h3>
+                    <div class="project-tags">
+                        <span class="tag tag-green">open-source</span>
+                    </div>
+                    <p class="project-desc">Automated translation of Pandas and NumPy workloads into optimized SQL, with support for sparse and dense data layouts.</p>
+                </li>
+                <li class="project-card">
+                    <h3 class="project-name"><a target="_blank" rel="noopener noreferrer" href="https://github.com/edin-dal/vecht">VecHT</a></h3>
+                    <div class="project-tags">
+                        <span class="tag tag-green">open-source</span>
+                    </div>
+                    <p class="project-desc">A hardware-conscious vectorized hash table in C++, offering efficient batch lookups through multi-threading, prefetching, and SIMD.</p>
+                </li>
+                <li class="project-card">
+                    <h3 class="project-name"><a target="_blank" rel="noopener noreferrer" href="https://github.com/edin-dal/sdqlpy">sdqlpy</a></h3>
+                    <div class="project-tags">
+                        <span class="tag tag-green">open-source</span>
+                    </div>
+                    <p class="project-desc">The first compiled query engine embedded in Python, generating optimized C++ for analytical queries.</p>
+                </li>
+                <li class="project-card">
+                    <h3 class="project-name">Compiled Tick-Engine</h3>
+                    <div class="project-tags">
+                        <span class="tag tag-amber">in development</span>
+                    </div>
+                    <p class="project-desc">A compiler-based engine for financial market tick data, exposing a Polars-like Python DSL and generating optimized execution code.</p>
+                </li>
+                <li class="project-card">
+                    <h3 class="project-name">Differentiable CFD Compiler</h3>
+                    <div class="project-tags">
+                        <span class="tag tag-amber">in development</span>
+                    </div>
+                    <p class="project-desc">Lowers a Python DSL for fluid simulation to compiled C++ and differentiates the solver itself, so exact design gradients come out alongside the simulation.</p>
+                </li>
+                <li class="project-card">
+                    <h3 class="project-name">Query-as-a-Service Platform</h3>
+                    <div class="project-tags">
+                        <span class="tag tag-amber">in development</span>
+                    </div>
+                    <p class="project-desc">A compiler-based OLAP query-processing platform with multi-frontend and multi-storage-format support.</p>
+                </li>
+            </ul>
+        </section>
+
+        <section id="path" class="section">
+            <h2 class="section-title"><span class="section-marker">/</span> Path</h2>
+            <div class="card">
+                <div class="path-head">
+                    <span class="h-edu">Academia</span>
+                    <span class="h-work">Industry</span>
+                </div>
+                <ol class="path">
+                    <li class="path-item is-edu">
+                        <div class="path-year">2026</div>
+                        <div class="path-entry">
+                            <div class="path-role"><a target="_blank" rel="noopener noreferrer" href="https://vldb.org/2026/call-for-industrial-track.html">Program Committee Member</a></div>
+                            <div class="path-org">VLDB 2026 — Industrial Track</div>
+                            <span class="tag path-kind">service</span>
+                        </div>
+                    </li>
+                    <li class="path-item is-edu">
+                        <div class="path-year">2026</div>
+                        <div class="path-entry">
+                            <div class="path-role"><a target="_blank" rel="noopener noreferrer" href="https://2026.ecoop.org/track/ecoop-2026-technical-papers">Program Committee Member</a></div>
+                            <div class="path-org">ECOOP 2026</div>
+                            <span class="tag path-kind">service</span>
+                        </div>
+                    </li>
+                    <li class="path-item is-work is-current">
+                        <div class="path-year">2025</div>
+                        <div class="path-entry">
+                            <div class="path-role">Principal Software Engineer</div>
+                            <div class="path-org">RelationalAI</div>
+                            <div class="path-span">2025 – now</div>
+                            <span class="tag path-kind">work</span>
+                        </div>
+                    </li>
+                    <li class="path-item is-edu">
+                        <div class="path-year">2025</div>
+                        <div class="path-entry">
+                            <div class="path-role"><a target="_blank" rel="noopener noreferrer" href="https://sites.google.com/view/dbpl2025/home/organizers">Program Committee Member</a></div>
+                            <div class="path-org">DBPL 2025</div>
+                            <span class="tag path-kind">service</span>
+                        </div>
+                    </li>
+                    <li class="path-item is-edu">
+                        <div class="path-year">2024</div>
+                        <div class="path-entry">
+                            <div class="path-role">Recognized as a Global Talent</div>
+                            <div class="path-org">The Royal Society of the United Kingdom</div>
+                            <div class="path-span">Aug 2024</div>
+                            <span class="tag path-kind">recognition</span>
+                        </div>
+                    </li>
+                    <li class="path-item is-work">
+                        <div class="path-year">2024</div>
+                        <div class="path-entry">
+                            <div class="path-role">Senior Database Researcher</div>
+                            <div class="path-org">Huawei Research UK</div>
+                            <div class="path-span">2024 – 2025</div>
+                            <span class="tag path-kind">work</span>
+                        </div>
+                    </li>
+                    <li class="path-item is-edu">
+                        <div class="path-year">2024</div>
+                        <div class="path-entry">
+                            <div class="path-role"><a target="_blank" rel="noopener noreferrer" href="https://ieeexplore.ieee.org/abstract/document/10597883">PyTond: Efficient Python Data Science on the Shoulders of Databases</a></div>
+                            <div class="path-org">IEEE ICDE 2024</div>
+                            <span class="tag path-kind">paper</span>
+                        </div>
+                    </li>
+                    <li class="path-item is-edu">
+                        <div class="path-year">2023</div>
+                        <div class="path-entry">
+                            <div class="path-role"><a target="_blank" rel="noopener noreferrer" href="https://drops.dagstuhl.de/entities/document/10.4230/LIPIcs.ECOOP.2023.27">An Efficient Vectorized Hash Table for Batch Computations</a></div>
+                            <div class="path-org">ECOOP 2023</div>
+                            <span class="tag path-kind">paper</span>
+                        </div>
+                    </li>
+                    <li class="path-item is-edu">
+                        <div class="path-year">2023</div>
+                        <div class="path-entry">
+                            <div class="path-role"><a target="_blank" rel="noopener noreferrer" href="https://drops.dagstuhl.de/entities/document/10.4230/LIPIcs.ECOOP.2023.28">Hinted Dictionaries: Efficient Functional Ordered Sets and Maps</a></div>
+                            <div class="path-org">ECOOP 2023</div>
+                            <span class="tag path-kind">paper</span>
+                        </div>
+                    </li>
+                    <li class="path-item is-edu">
+                        <div class="path-year">2023</div>
+                        <div class="path-entry">
+                            <div class="path-role"><a target="_blank" rel="noopener noreferrer" href="https://dl.acm.org/doi/abs/10.1145/3555041.3589735">Efficient Query Processing in Python Using Compilation</a></div>
+                            <div class="path-org">ACM SIGMOD 2023</div>
+                            <span class="tag path-kind">paper</span>
+                        </div>
+                    </li>
+                    <li class="path-item is-edu">
+                        <div class="path-year">2023</div>
+                        <div class="path-entry">
+                            <div class="path-role"><a target="_blank" rel="noopener noreferrer" href="https://dl.acm.org/doi/abs/10.1145/3578360.3580264">Building a Compiled Query Engine in Python</a></div>
+                            <div class="path-org">ACM CC 2023</div>
+                            <span class="tag path-kind">paper</span>
+                        </div>
+                    </li>
+                    <li class="path-item is-edu">
+                        <div class="path-year">2021</div>
+                        <div class="path-entry">
+                            <div class="path-role">Ph.D., Informatics</div>
+                            <div class="path-org">University of Edinburgh</div>
+                            <div class="path-span">2021 – 2024</div>
+                            <span class="tag path-kind">education</span>
+                        </div>
+                    </li>
+                    <li class="path-item is-work">
+                        <div class="path-year">2019</div>
+                        <div class="path-entry">
+                            <div class="path-role">Software Development Team Lead</div>
+                            <div class="path-org">Orchid Pharmed</div>
+                            <div class="path-span">2019 – 2021</div>
+                            <span class="tag path-kind">work</span>
+                        </div>
+                    </li>
+                    <li class="path-item is-work">
+                        <div class="path-year">2015</div>
+                        <div class="path-entry">
+                            <div class="path-role">Founder &amp; Product Manager</div>
+                            <div class="path-org">Sharif Pars</div>
+                            <div class="path-span">2015 – 2021</div>
+                            <span class="tag path-kind">work</span>
+                        </div>
+                    </li>
+                    <li class="path-item is-edu">
+                        <div class="path-year">2015</div>
+                        <div class="path-entry">
+                            <div class="path-role">Course Instructor and Organizer</div>
+                            <div class="path-org">CE Department, Sharif University of Technology</div>
+                            <div class="path-span">2015 – 2016</div>
+                            <span class="tag path-kind">teaching</span>
+                        </div>
+                    </li>
+                    <li class="path-item is-edu">
+                        <div class="path-year">2013</div>
+                        <div class="path-entry">
+                            <div class="path-role">M.Sc., Information Technology</div>
+                            <div class="path-org">Sharif University of Technology</div>
+                            <div class="path-span">2013 – 2015</div>
+                            <span class="tag path-kind">education</span>
+                        </div>
+                    </li>
+                    <li class="path-item is-edu">
+                        <div class="path-year">2009</div>
+                        <div class="path-entry">
+                            <div class="path-role">B.Sc., Information Technology</div>
+                            <div class="path-org">Sharif University of Technology</div>
+                            <div class="path-span">2009 – 2013</div>
+                            <span class="tag path-kind">education</span>
+                        </div>
+                    </li>
+                </ol>
+            </div>
+        </section>
+
+        <section id="contact" class="section contact-cta">
+            <h2 class="section-title"><span class="section-marker">/</span> Get in touch</h2>
+            <p class="cta-lede">Feel free to get in touch by email.</p>
+            <a class="cta-email" href="mailto:hesamoddin.shahrokhi@gmail.com">hesamoddin.shahrokhi@gmail.com</a>
+        </section>
+    </main>
+
+    <script>
+    (() => {
+        // Always open at the top on reload, rather than restoring the old scroll position.
+        if ('scrollRestoration' in history) history.scrollRestoration = 'manual';
+        if (!location.hash) window.scrollTo({ top: 0, left: 0, behavior: 'instant' });
+
+        const sections = document.querySelectorAll('#top, main .section');
+        const links = document.querySelectorAll('.topnav-links a');
+        if (!('IntersectionObserver' in window) || !sections.length || !links.length) return;
+        const byId = new Map();
+        links.forEach(a => byId.set(a.getAttribute('href').slice(1), a));
+        const setActive = (a) => {
+            links.forEach(l => l.classList.remove('active'));
+            if (a) a.classList.add('active');
+        };
+        // The final section can sit too low to ever reach the observer band, so once
+        // the page is scrolled to the bottom its link wins and the observer stands down.
+        const lastLink = byId.get(sections[sections.length - 1].id);
+        const atBottom = () => window.innerHeight + window.scrollY >= document.documentElement.scrollHeight - 4;
+
+        const observer = new IntersectionObserver((entries) => {
+            if (atBottom()) return;
+            entries.forEach(entry => {
+                if (entry.isIntersecting) setActive(byId.get(entry.target.id));
+            });
+        }, { rootMargin: '-40% 0px -55% 0px' });
+        sections.forEach(s => observer.observe(s));
+
+        window.addEventListener('scroll', () => {
+            if (atBottom() && lastLink) setActive(lastLink);
+        }, { passive: true });
+    })();
+    </script>
+
+    <footer class="page-footer">
+        <p>
+            <span>&copy; Hesam Shahrokhi</span>
+            <span class="footer-sep" aria-hidden="true">·</span>
+            <span class="last-updated"><!-- LAST_UPDATED -->Last updated: August 10, 2026<!-- /LAST_UPDATED --></span>
+        </p>
+    </footer>
+</body>
+</html>
