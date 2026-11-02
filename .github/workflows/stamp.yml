@@ -1,0 +1,28 @@
+name: Stamp last-updated date
+
+on:
+  push:
+    branches: [main]
+
+permissions:
+  contents: write
+
+jobs:
+  stamp:
+    # Skip runs triggered by our own auto-commit to avoid an infinite loop.
+    if: "!contains(github.event.head_commit.message, '[skip ci]')"
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Replace placeholder with commit date
+        run: |
+          DATE=$(git log -1 --format=%cd --date=format:'%B %-d, %Y')
+          sed -i "s|<!-- LAST_UPDATED -->.*<!-- /LAST_UPDATED -->|<!-- LAST_UPDATED -->Last updated: ${DATE}<!-- /LAST_UPDATED -->|" index.html
+          ISO=$(git log -1 --format=%cd --date=format:'%Y-%m-%d')
+          sed -i "s|<lastmod>.*</lastmod>|<lastmod>${ISO}</lastmod>|" sitemap.xml
+
+      - uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: 'chore: stamp last-updated date [skip ci]'
+          file_pattern: index.html sitemap.xml
